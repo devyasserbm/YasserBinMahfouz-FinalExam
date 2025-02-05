@@ -13,11 +13,9 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set up JDK 21mvn clean
-  mvn compile
-  mvn package
+      - name: Set up JDK 21
 
-uses: actions/setup-java@v3
+        uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '21'
